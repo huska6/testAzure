@@ -30,3 +30,18 @@ steps:
     replaceExistingArchive: true 
     #verbose: # Optional
     #quiet: # Optional
+
+steps:
+- publish: $(System.DefaultWorkingDirectory)/readme.md
+  artifact: testReadme
+
+# - task: UniversalPackages@0
+#   displayName: Universal Publish
+#   inputs:
+#     command: publish
+#     publishDirectory: '$(Build.ArtifactStagingDirectory)'
+#     vstsFeedPublish: '<huska>/'
+#     vstsFeedPackagePublish: '<Package name>'
+#     versionOption: custom
+#     versionPublish: '<Package version>'
+#     packagePublishDescription: '<Package description>'
