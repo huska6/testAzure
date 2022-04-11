@@ -31,7 +31,6 @@ steps:
     #verbose: # Optional
     #quiet: # Optional
 
-steps:
 - publish: $(System.DefaultWorkingDirectory)/readme.md
   artifact: testReadme
 
