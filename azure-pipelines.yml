@@ -16,6 +16,7 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    ll
   displayName: 'Run a multi-line script'
 
 # Archive files
@@ -31,7 +32,7 @@ steps:
     #verbose: # Optional
     #quiet: # Optional
 
-- publish: $(System.DefaultWorkingDirectory)/readme.md
+- publish: $(System.DefaultWorkingDirectory)/README.md
   artifact: testReadme
 
 # - task: UniversalPackages@0
