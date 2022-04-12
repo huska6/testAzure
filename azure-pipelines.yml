@@ -46,7 +46,7 @@ steps:
   displayName: Universal Publish
   inputs:
     command: publish
-    publishDirectory: 
+    publishDirectory: $(Build.DefaultWorkingDirectory)
     vstsFeedPublish: 'pipelineTest/testFeed'
-    vstsFeedPackagePublish: 'Readme'
+    vstsFeedPackagePublish: 'readme-md'
 
