@@ -35,6 +35,13 @@ steps:
 - publish: $(System.DefaultWorkingDirectory)/README.md
   artifact: testReadme
 
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.md'
+    packDestination: '$(Build.ArtifactStagingDirectory)'
+
+
 - task: UniversalPackages@0
   displayName: Universal Publish
   inputs:
