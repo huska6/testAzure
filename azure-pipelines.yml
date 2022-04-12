@@ -47,6 +47,6 @@ steps:
   inputs:
     command: publish
     publishDirectory: '$(Build.DefaultWorkingDirectory)'
-    vstsFeedPublish: 'pipelineTest/testArtifacts'
+    vstsFeedPublish: 'pipelineTest/testFeed'
     vstsFeedPackagePublish: 'Readme'
 
